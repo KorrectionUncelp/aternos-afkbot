@@ -13,7 +13,7 @@ var moveinterval = 2; // 2 second movement interval
 var maxrandom = 5; // 0-5 seconds added to movement interval (randomly)
 var host = process.env['AFK_IP'] || data["ip"];
 var port = process.env['AFK_PORT'] || data["port"];
-var username = process.enc['AFK_NAME'] || data["name"]
+var username = process.env['AFK_NAME'] || data["name"]
 var bot = mineflayer.createBot({
   host: host,
   port: port,
