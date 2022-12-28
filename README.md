@@ -6,6 +6,9 @@ IT DOESN'T HAVE TO BE AN ATERNOS SERVER too! It can be any server as long as it'
 
 Mainly Supports Minecraft version 1.8, 1.9, 1.10, 1.11, 1.12, 1.13, 1.14, 1.15 and 1.16.
 
+## Fork features
+This fork can read values from environment variables `AFK_NAME`, `AFK_IP` and `AFK_PORT`. The names basically explain what these variables are for. If the variable is not defined, it defaults to the values from the config.
+
 # Requirements 🎒
 What You'll need
 
