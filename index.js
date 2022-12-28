@@ -61,4 +61,4 @@ bot.on('spawn',function() {
 http.createServer((req, res) => {
 	res.writeHead(200);
 	res.end('OK');
-}).listen(process.env['PORT']);
+}).listen(process.env['PORT'] || 8032);
