@@ -1,5 +1,6 @@
 const mineflayer = require('mineflayer')
 const fs = require('fs');
+const http = require('http');
 let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
 var lasttime = -1;
@@ -57,3 +58,7 @@ bot.on('spawn',function() {
     connected=1;
 });
 
+http.createServer((req, res) => {
+	res.writeHead(200);
+	res.end('OK');
+}).listen(process.env['PORT']);
